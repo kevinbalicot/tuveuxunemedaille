@@ -1,0 +1,42 @@
+{
+  "name": "tuveuxunemedaille",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "canvas": "^2.10",
+    "dotenv": "^16.0.3",
+    "jws": "^4.0.0",
+    "nedb": "^1.8.0",
+    "png-itxt": "^2.0.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-scripts": "^2.1.8",
+    "uuid": "^3.3.2",
+    "yion": "^1.3.2",
+    "yion-body-parser": "^0.4.3"
+  },
+  "publish": {
+    "ssh": {
+      "ip": "beelab.tk",
+      "user": "root",
+      "port": 23
+    },
+    "env": {
+      "HOST_ENV": "https://tuveuxunemedaille.fr"
+    },
+    "image": "node:latest",
+    "options": "--restart always -v /home/open-badge/data:/var/www/openbadges/data -v /home/open-badge/keys:/var/www/openbadges/keys",
+    "port": 9020
+  },
+  "devDependencies": {
+    "docker-publisher": "^0.6.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "build": "react-scripts build"
+  },
+  "author": "Kevin Balicot <kevinbalicot@gmail.com>",
+  "license": "MIT"
+}

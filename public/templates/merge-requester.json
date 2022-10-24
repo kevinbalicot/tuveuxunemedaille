@@ -1,0 +1,20 @@
+{
+    "image": {
+        "icon": "/solid/code-branch.svg",
+        "iconColor": "#002F32",
+        "fill": "#A5C77F",
+        "stroke": "#002F32",
+        "displayExtra": 1,
+        "extraAlpha": 0.3,
+        "displayBanner": 1,
+        "bannerFill": "#A5C77F",
+        "bannerStroke": "#002F32",
+        "bannerText": "Merge Requester"
+    },
+
+    "info": {
+        "name": "Proposer ma première MR/PR",
+        "description": "Proposer ma première MR/PR sur l'un des dêpot (Gitlab ou Github).",
+        "criteria": "# Proposer ma première MR/PR\nCritères d'obtention : \n- Sur Gitlab ou Github, proposer une MR/PR pour l'un des projets du Groupe PSIH.\n- Cette MR/PR doit répondre aux exigences de l'équipe et être validée."
+    }
+}

@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+DATA_DIRECTORY=data
+KEYS_DIRECTORY=data/keys
+
+if [ ! -d "$DATA_DIRECTORY" ]; then
+    mkdir "$DATA_DIRECTORY"
+fi
+
+if [ ! -d "$KEYS_DIRECTORY" ]; then
+    mkdir "$KEYS_DIRECTORY"
+
+    openssl genrsa -out "./$KEYS_DIRECTORY/private-key.pem" 2048
+    openssl rsa -in "./$KEYS_DIRECTORY/private-key.pem" -pubout -out "./$KEYS_DIRECTORY/public-key.pem"
+fi
